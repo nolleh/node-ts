@@ -1,6 +1,6 @@
 # NodeJs With TS Start Up
 
-for note for starting ts project.
+notations for making project for node with ts
 > make project for node-ts  
 
 when typescript intall to local repo.
@@ -166,11 +166,7 @@ enjoy happy coding!
 https://github.com/yarnpkg/yarn/issues/1583
 
 > should I need to put yarn.lock in .gitignore?
-
-
 >>
 >> You should add yarn.lock to your git, don't ignore it.
-
 >> See https://yarnpkg.com/en/docs/migrating-from-npm
-
 >> When you run either yarn or yarn add <package>, Yarn will generate a yarn.lock file within the root directory of your package. You don’t need to read or understand this file - just check it into source control. When other people start using Yarn instead of npm, the yarn.lock file will ensure that they get precisely the same dependencies as you have.
