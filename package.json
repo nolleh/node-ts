@@ -3,12 +3,15 @@
   "scripts": {
     "build": "tsc",
     "start": "nodemon --watch 'src/**/*' -e ts,tsx --exec ts-node ./src/app.ts",
-    "test": "jest --detectOpenHandles --forceExit"
+    "test": "jest --detectOpenHandles --forceExit",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/config": "^0.0.39",
     "@types/jest": "^27.0.2",
+    "husky": "^8.0.0",
     "jest": "^27.3.1",
+    "lint-staged": "^13.2.0",
     "nodemon": "^2.0.14",
     "ts-jest": "^27.0.7",
     "ts-node": "^10.4.0",
@@ -33,5 +36,8 @@
   },
   "dependencies": {
     "config": "^3.3.6"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,json,md}": "pnpm format"
   }
 }
